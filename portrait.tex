@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Class options                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Orientation:                         %
+% portrait (default), landscape        %
+%                                      %
+% Paper size:                          %
+% a0paper (default), a1paper, a2paper, %
+% a3paper, a4paper, a5paper, a6paper   %
+%                                      %
+% Language:                            %
+% english (default), norsk             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{uwposter}
+
+
+\usepackage{lipsum}                                % Dummy text
+\usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
+\usepackage[absolute, overlay]{textpos}            % Figure placement
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+
+%Global Background must be put in preamble
+\usebackgroundtemplate%
+{%
+    \includegraphics[height=\paperheight,keepaspectratio,clip]{uwposter-images/background.png}%
+}
+
+\title{Geoscience Access and Inclusivity Network}
+
+
+%% Remove footline:
+%\setbeamertemplate{footline}{}
+
+
+\begin{document}
+\begin{frame}
+\begin{columns}[onlytextwidth]
+
+
+\begin{column}{0.5\textwidth - 1.5cm}
+    \begin{block}{Motivation}
+       The \textbf{\alert{G}}eoscience \textbf{\alert{A}}ccess and \textbf{\alert{I}}nclusivity \textbf{\alert{N}}etwork (\textbf{\alert{GAIN}}) is intended to break down barriers –related to knowledge, funding, and bias – by distributing grants for field-related education, providing complementary coursework, and creating opportunities for mentorship.
+   	\textbf{\alert{GAIN}} provides an avenue for graduate students to develop the field skills and experiences that are uniquely suited to their educational needs, background, scientific development, and future goals.
+	 \textbf{\alert{GAIN}} seeks to:
+    \end{block}
+
+    \begin{block}{Mission}
+         \begin{enumerate}[I.]
+         \item
+    	provide field-related education that will aid each student in developing their own coherent scientific narrative as they work towards their dissertation.
+    	\item
+	promote equity and inclusivity in the geosciences community by promoting those who do not otherwise have access to field training, and by providing opportunities regardless of pre-existing knowledge.
+    	\item
+	cultivate mentorship and collaboration among graduate students, postdocs, faculty, and local scientists.
+    	\item
+	emphasize justice, equity, diversity, and inclusivity in all activities, including, but not limited to, distributing grants, conducting coursework, and fostering mentorship.
+	\end{enumerate}
+	Our mission statement reflects our commitment to supporting the next generation of field scientists and geotechnical professionals.
+        The mechanism for this education is flexible support that prioritizes collaboration and meets interested students where they are by coupling funding opportunities with course work and individualized mentoring plans.
+
+    \end{block}
+
+    \begin{block}{Funding}
+               
+        Funding for \textbf{\alert{GAIN}} will be awarded on a rolling basis through a blind peer review process. Members of the GAIN board (comprised of graduate students, postdocs and faculty) will evaluate the proposals based on a four part rubric that will prioritize 
+        \begin{enumerate}[I.]
+        \item
+        Inclusivity, increasing field access
+        \item
+        Professional development
+        \item
+        Program sustainability 
+        \item
+        Intellectual merit
+        \end{enumerate}
+
+        Students may apply for \textbf{small awards (\alert{<\$2500})} to support building field competency through participation in courses and existing field programs that cultivate field skills not supported by current coursework at the University of Washington.
+        Students may also propose \textbf{larger projects (\alert{>\$2500})} that pose new scientific questions that can be addressed through local fieldwork.
+        
+
+    \end{block}
+
+\end{column}
+
+
+\begin{column}{0.5\textwidth - 1.5cm}
+       \begin{block}{Safety and Planning}
+    As part of the application, students will design a comprehensive equipment-use and field safety plan including a plan for data management. The safety plan will include:
+        \begin{enumerate}[I.]
+         \item
+    	a thorough risk assessment of associated tasks
+    	\item
+	an action plan of how the team will mitigate risk
+    	\item
+	a check-in plan, and emergency response plan.
+    	\item
+	and an identification of risk-appropriate training and minimum training standards
+	\end{enumerate}
+	
+	The details of this field plan should be familiar to all field participants who are to be selected before the the proposal is funded.
+    \end{block}
+    
+    \begin{block}{Coursework and Mentorship}
+        The aim of  \textbf{\alert{GAIN}} coursework is to increase competency in skills necessary to conduct fieldwork, and give students experience proposing field-science related questions. Certain elements of the curriculum such as the fieldwork tools and techniques may change with the instructor, but foundational material including best practices in the field, network building strategies, and co-creation resources and research products would be taught as part of every offering. These goals mirror mentorship goals, which seek to broaden skill sets by expanding mentoring networks, focusing particularly on mentors outside the traditional academic community. \textbf{\alert{GAIN}}  will foster this between students and faculty and external mentors, but also between peers to build a strong future scientific community. 
+
+    \end{block}
+    
+    \begin{alertblock}{How to get involved?}
+        If you are interested in learning more about \textbf{\alert{GAIN}} as a prospective student member or as a potential mentor, field guide, or curriculum developer, fill out the QR encoded form!
+        \begin{figure}
+        \includegraphics[width=.4\linewidth]{uwposter-images/frame.png}
+        \label{fig:qrcode}
+        \end{figure}
+        
+    \end{alertblock}
+    
+    
+    \end{column}
+
+
+\end{columns}
+
+
+\begin{textblock}{0.76}(0.12, 0.90)
+    \color{white}
+    \sffamily
+    \textbf{Acknolwedgements}
+    \\
+    Knut Christianson conceived the project and solicited the initial funds for \textbf{\alert{GAIN}} with the college of the Environment and the Earth and Space Sciences department.  
+    Current members include Ben Hills, Annika Horlings, Andrew Hoffman, Taryn Black, Jessica Badgeley, Gemma O'Connor, Lindsey Davidage, John Christian,  Max Stevens, Ed Waddington, TJ Fudge, Michelle Koutnik, Nick Holshuh, and Eric Steig.
+    \end{textblock}
+
+
+\end{frame}
+\end{document}
